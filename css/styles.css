@@ -1,0 +1,30 @@
+h1 {
+    font-size: 30px;
+    color:cyan
+}
+
+h2{
+    font-size: 20px;
+    color: crimson;
+    text-align: right;
+}
+
+h2 {
+    color: rgb(72, 15, 126);
+}
+
+.grande {
+    font-size: 100px;
+}
+
+.maiuscula {
+    text-transform: uppercase;
+}
+
+.grande.maiuscula {
+    text-shadow: 6px 6px 6px black;
+}
+
+h1 span {
+    color:chocolate;
+}
