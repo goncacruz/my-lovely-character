@@ -1,62 +1,277 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>The Lion King</title>
-        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/lionking.css">
-    </head>
-    <body>
-        <header>
-            <img src="images/lionking.jpg">
-            <h1>Lion King</h1>
-        </header>
-        <main>
-            <h2>Sobre</h2>
-            <p>"O Rei Leão" (original: "The Lion King") é a 32.ª longa-metragem animado e produzido pela Walt 
-                Disney Feature Animation e pela Walt Disney Pictures e distribuído pela Buena Vista Pictures. 
-                Foi dirigido por Roger Allers e Rob Minkoff, com guião dirigido por Linda Woolverton, 
-                Irene Mecchi e Jonathan Roberts, e música de Elton John com letras de Tim Rice. 
-                <br>
-                O filme narra a história do jovem leão Simba (Matthew Broderick), que sente-se culpado pelo 
-                assassinato do seu pai, o rei Mufasa (James Earl Jones), e foge do seu Reino, sem saber que a 
-                morte foi orquestrada pelo seu tio Scar (Jeremy Irons) para tomar o poder.
-            </p>
-            <img src="images/simba_born.jpg">
-            <p class="caption"> Nascimento de Simba
-            </p>
-            <h2>Curiosidades</h2>
-            <p>
-                "The Lion King" estreou em 19 de julho de 2019 nos Estados Unidos. No Brasil e em Portugal, 
-                estreou em 18 de julho de 2019. Recebeu críticas mistas, com elogios para os seus efeitos 
-                visuais, trilha sonora e performances vocais, mas críticas pela sua falta de originalidade e 
-                expressividade facial nos personagens.
-                <br>
-                Arrecadou mais de US$ 1,6 bilhão mundialmente, tornando-se a segunda maior bilheteria de 2019.
-                Atualmente, é a sétima maior bilheteria de todos os tempos.
-            </p>
-            <h2>Personagens</h2>
-            <img src="images/elenco.jpg">
-            <ul>
-                <li><a href="https://lion-kinglion-guard.fandom.com/wiki/Shenzi" target="_blank">Shenzi</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Scar" target="_blank">Scar</a></li>
-                <li><a href="https://lionking.fandom.com/wiki/Ed" target="_blank">Ed</a></li>
-                <li><a href="https://lionking.fandom.com/wiki/Banzai" target="_blank">Banzai</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Rafiki" target="_blank">Rafiki</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Simba" target="_blank">Simba</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Mufasa" target="_blank">Mufasa</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Nala" target="_blank">Nala</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Sarabi" target="_blank">Sarabi</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Zazu" target="_blank">Zazu</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Sarafina" target="_blank">Sarafina</a></li>
-                <li><a href="https://disney.fandom.com/wiki/Timon" target="_blank">Timon</a></li>
-                <li><a href="https://lionking.fandom.com/wiki/Pumbaa" target="_blank">Pumba</a></li>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <title>The Lion King</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/lionking.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Lion King</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#personagens">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacta">Contacta o <span class="cute-font">Lion King</span></a>
+                </li>
             </ul>
-        </main>
-    </body>
+        </div>
+    </nav>
+    <header class="jumbotron text-center bg-primary mt-5">
+        <img class="rounded-circle" src="images/lionking.jpg">
+        <h1 class="display-4 text-white">Lion King</h1>
+    </header>
+    <main class="container">
+        <h2 id="sobre">Sobre</h2>
+        <p>"O Rei Leão" (original: "The Lion King") é a 32.ª longa-metragem animado e produzido pela Walt
+            Disney Feature Animation e pela Walt Disney Pictures e distribuído pela Buena Vista Pictures.
+            Foi dirigido por Roger Allers e Rob Minkoff, com guião dirigido por Linda Woolverton,
+            Irene Mecchi e Jonathan Roberts, e música de Elton John com letras de Tim Rice.
+            <br>
+            O filme narra a história do jovem leão Simba (Matthew Broderick), que sente-se culpado pelo
+            assassinato do seu pai, o rei Mufasa (James Earl Jones), e foge do seu Reino, sem saber que a
+            morte foi orquestrada pelo seu tio Scar (Jeremy Irons) para tomar o poder.
+        </p>
+        <img class="img-fluid" src="images/simba_born.jpg">
+        <p class="caption"> Nascimento de Simba
+        </p>
+        <h2 id="curiosidades">Curiosidades</h2>
+        <p>
+            "The Lion King" estreou em 19 de julho de 2019 nos Estados Unidos. No Brasil e em Portugal,
+            estreou em 18 de julho de 2019. Recebeu críticas mistas, com elogios para os seus efeitos
+            visuais, trilha sonora e performances vocais, mas críticas pela sua falta de originalidade e
+            expressividade facial nos personagens.
+            <br>
+            Arrecadou mais de US$ 1,6 bilhão mundialmente, tornando-se a segunda maior bilheteria de 2019.
+            Atualmente, é a sétima maior bilheteria de todos os tempos.
+        </p>
+        <h2 id="personagens" class="mt-2 mb-2">Personagens</h2>
+        <img class="mt-2 mb-2" src="images/elenco.jpg">
+        <div class="row mx-auto">
+            <!--Coluna 1-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/proxy/9ESrJyv8I4U3FlNSRj_4w1PJi0w9Cg1ZlXkNM2Kk79XzkGDAwOA0Ou03fK3exxo1kcei47YsrrycTRqtbXyHnsWbBzIfP_niHUa66MFs2p4"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Simba</h5>
+                        <p class="card-text">Simba is the protagonist of Disney's 1994 animated feature film, The Lion
+                            King. He is the son of Mufasa, who was destined to rule the Pride Lands, as King, and the
+                            nephew of Scar.</p>
+                        <a href="https://disney.fandom.com/wiki/Simba" class="btn btn-primary">Conheçe o Simba</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 2-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77a638c2-9d34-4f8d-9aef-edb8d196b304/d6fps3k-96d9785f-dc22-4944-9b64-fe8238e198ba.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzdhNjM4YzItOWQzNC00ZjhkLTlhZWYtZWRiOGQxOTZiMzA0XC9kNmZwczNrLTk2ZDk3ODVmLWRjMjItNDk0NC05YjY0LWZlODIzOGUxOThiYS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.2yhT81NbCjxL_WK9H5Xbf-O2fx7AxDh25QoZEecasbM"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mufasa</h5>
+                        <p class="card-text">Mufasa is a major character in Disney's 1994 animated feature film, The
+                            Lion King. He was the king of the Pride Lands and the father of Simba.</p>
+                        <a href="https://disney.fandom.com/wiki/Mufasa" class="btn btn-primary">Conheçe o Mufasa</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 3-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://www.kindpng.com/picc/m/117-1176253_transparent-lion-king-png-scar-lion-king-png.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Scar</h5>
+                        <p class="card-text">Scar is the main antagonist of Disney's 1994 animated feature film The Lion
+                            King. As the brother of Mufasa and second-born prince of the Pride Lands, Scar was next in
+                            line to assume the throne as king.</p>
+                        <a href="https://disney.fandom.com/wiki/Scar" class="btn btn-primary">Conheçe o Scar</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 4-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/02/d9/1c/02d91ccfb06f6869f0570d23997e959e.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarabi</h5>
+                        <p class="card-text">Sarabi is a lioness who is queen of the Pride Lands in Disney's 1994
+                            animated feature film, The Lion King. She is Mufasa's wife (later widow) and Simba's mother.
+                        </p>
+                        <a href="https://disney.fandom.com/wiki/Sarabi" class="btn btn-primary">Conheçe a Sarabi</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 5-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://www.freepngimg.com/thumb/disney/50688-2-nala-image-download-hq-png.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nala</h5>
+                        <p class="card-text">Nala is the deuteragonist of Disney's 1994 animated feature film, The Lion
+                            King. She is the lifelong best friend of Simba, prince of the Pride Lands.</p>
+                        <a href="https://disney.fandom.com/wiki/Nala" class="btn btn-primary">Conheçe a Nala</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 6-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/disney/images/3/3a/Blueraysarafina.png/revision/latest?cb=20140914135925"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarafina</h5>
+                        <p class="card-text">Sarafina is a minor character in Disney's 1994 animated feature film, The
+                            Lion King. She is the mother of Nala, and the maternal grandmother of Kion and Kiara.</p>
+                        <a href="https://disney.fandom.com/wiki/Sarafina" class="btn btn-primary">Conheçe a Sarafina</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 7-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://pngimg.com/uploads/lion_king/lion_king_PNG17.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Timon</h5>
+                        <p class="card-text">Timon is a major character in Disney's 1994 animated feature film The Lion
+                            King and the protagonist of the 2004 film The Lion King 1½. He is a wisecracking meerkat and
+                            the best friend of Pumbaa.</p>
+                        <a href="https://disney.fandom.com/wiki/Timon" class="btn btn-primary">Conheçe o Timon</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 8-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://pngimg.com/uploads/lion_king/lion_king_PNG49.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pumbaa</h5>
+                        <p class="card-text">Pumbaa is a major character in Disney's 1994 animated feature film The Lion
+                            King and the deuteragonist of the 2004 film The Lion King 1½. He is a gluttonous warthog and
+                            the best friend of Timon.</p>
+                        <a href="https://lionking.fandom.com/wiki/Pumbaa" class="btn btn-primary">Conheçe o Pumbaa</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 9-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/proxy/dd30umdGLpwFkp8dhbwWPzb6zp8ZuF4ceakdG4zfBEprFbPgF76RHxTFfBZZwQyHd-MszpX832EJNHYqn9DJ91lZG0EF1ZmzTJYiZ3crPKkBeKebv9fMO8gSMnB0"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Zazu</h5>
+                        <p class="card-text">Zazu is a major character in Disney's 1994 animated feature film, The Lion
+                            King. He is an uptight, red-billed hornbill that served as King Mufasa's (and later Simba's)
+                            majordomo and royal advisor, and the begrudged caretaker of Simba and later his children.
+                        </p>
+                        <a href="https://disney.fandom.com/wiki/Zazu" class="btn btn-primary">Conheçe o Zazu</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 10-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/p__/images/8/89/RafikiTsP.png/revision/latest?cb=20200713215822&path-prefix=protagonist"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rafiki</h5>
+                        <p class="card-text">Rafiki is a supporting character in Disney's 1994 animated feature film The
+                            Lion King. He is a mandrill who serves as a shaman and Royal Mjuzi of the Pride Lands.
+                        </p>
+                        <a href="https://disney.fandom.com/wiki/Rafiki" class="btn btn-primary">Conheçe o Rafiki</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 11-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/disneymagicalkingdoms/images/0/0a/Cp-shenzi.png/revision/latest?cb=20200727232349"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shenzi</h5>
+                        <p class="card-text">Shenzi is a female hyena. She is one of Scar's chief henchmen, along with
+                            Banzai and Ed. She is the leader of her clan.
+                        </p>
+                        <a href="https://lion-kinglion-guard.fandom.com/wiki/Shenzi" class="btn btn-primary">Conheçe a
+                            Shenzi</a>
+                    </div>
+                </div>
+            </div>
+            <!--Coluna 12-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://static.wikia.nocookie.net/disneymagicalkingdoms/images/f/f3/Cp-banzai.png/revision/latest?cb=20200724003049"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banzai</h5>
+                        <p class="card-text">Banzai is a male hyena. He is a high-ranking member of Shenzi's clan along
+                            with his companion Ed.
+                        </p>
+                        <a href="https://lionking.fandom.com/wiki/Banzai" class="btn btn-primary">Conheçe o Banzai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="contacta" class="mt-3">Contacta The Lion King</h2>
+        <form class="border p-3 mb-2">
+            <div class="form-group">
+                <label for="exampleInputEmail1">None</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </main>
     <footer>
         <p>
             Trabalho realizado no âmbito da disciplina de Programação II - Licenciatura em Multimédia &copy; 2020
         </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+
 </html>
