@@ -9,6 +9,19 @@ header img {
     background-color: #BB3D02 !important;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    color: #999999;
+}
+
+h1 {
+    color: #FF9B15;
+}
+
 h1, h2, .navbar-brand, .cute-font {
     font-family: 'Righteous', cursive;
 }
